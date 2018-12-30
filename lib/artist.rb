@@ -41,7 +41,9 @@ class Artist
   end
 
   def print_songs
-    @songs.split(", ")
+    @songs.each do |uno| 
+      puts uno.name
+    end
   end
 
 
