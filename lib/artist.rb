@@ -40,6 +40,9 @@ class Artist
      self.find_by_name(name) || self.create_by_name(name)
   end
 
+  def print_songs
+    @songs.print
+  end
 
 
 end
