@@ -23,11 +23,11 @@ class Artist
   end
 
   def save
-    @@all << @self
+    @@all << self
   end
 
   def self.find_by_name(name)
-    self.all.find {|s| s.name == name}
+    self.all.find {|example| example.name == name}
   end
 
   def self.create_by_name(name)
