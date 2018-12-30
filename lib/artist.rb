@@ -35,7 +35,7 @@ class Artist
   end
 
   def print_songs
-    songs.join("\n")
+      puts @songs.join("\n")
   end
 
 end
