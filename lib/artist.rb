@@ -35,7 +35,7 @@ class Artist
   end
 
   def print_songs
-      puts "#{songs.join("\n")}\n"
+      songs.each { |song| puts song.name}
   end
 
 end
