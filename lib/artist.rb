@@ -29,8 +29,9 @@ class Artist
   end
 
   def self.create_by_name(name)
-    create_artist_by_name(name) = Artist.new(name)
-    create_artist_by_name(name)
+    create_artist_by_name = Artist.new(name)
+    @@all << self
+    create_artist_by_name
   end
 
   def self.find_or_create_by_name(name)
