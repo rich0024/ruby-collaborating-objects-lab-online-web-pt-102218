@@ -12,7 +12,7 @@ class Artist
     @songs << song
   end
 
-  def songs
+  def self.songs
     @songs
   end
 
